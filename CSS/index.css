@@ -1,0 +1,28 @@
+.box{
+    background-color: aquamarine;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;        /*For item alignment on main axis.*/
+    flex-direction: row; /*This property is used to set the main axis, which is a ‘row’ by default. */
+    flex-wrap:wrap;         /*The items will now be wrapped to the size of the available viewport. */
+    align-items: flex-end;            /*For item alignment on cross axis. */
+    gap: 10px;      /*Make gap in main axis*/
+    row-gap: 10px;  /*Make gap between rows*/
+    column-gap: 10px;  /*Make gap between columns*/
+    flex-grow: 0;
+    flex-shrink:1;
+    flex-basis: auto;
+    flex: 0 1 auto; /*Above three can be written also as in one line.*/
+    /* align-content: space-between;   Used for packing flex lines and control over space. */
+
+}
+.box3{
+    background-color: blanchedalmond;
+    align-self:center;
+    flex: 1 1 auto;
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container_nav {
+    background-color: #2b2d42;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+}
+
+.container_nav li {
+    list-style-type: none;
+}
+
+.container_nav a {
+    display: inline-block;
+    padding: 25px;
+    margin: 0 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container_nav a:hover {
+    background-color: lightsteelblue;
+}
