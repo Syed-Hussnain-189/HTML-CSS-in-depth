@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Radio Button</title>
+    </head>
+    <body>
+        <main>
+            <h1>Book a Table</h1>
+            <form method="POST">
+                <fieldset id="size">
+                    <label>
+                        <input type="radio" value="2" name="size"> 2-Persons Table
+                    </label>
+                    <label>
+                        <input type="radio" value="4" name="size" checked> 4-Persons Table
+                    </label>
+                    <label>
+                        <input type="radio" value="6" name="size"> 6-Persons Table
+                    </label>
+                </fieldset>
+
+                <fieldset id="location">
+                    <label>
+                        <input type="radio" value="indoor" name="location" checked>  Indoors
+                    </label>
+                    <label>
+                        <input type="radio" value="outdoor" name="location"> Outdoors
+                    </label>
+                </fieldset>
+                
+                <button type="submit">Book table</button>
+            </form>
+        </main>
+    </body>
+
+</html>

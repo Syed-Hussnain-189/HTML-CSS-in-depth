@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Embedded Content and Media Tags Example</title>
+</head>
+<body>
+
+  <h1>Embedded Content and Media Tags Example</h1>
+
+  <!-- Audio Tag -->
+  <audio controls>
+    <source src="E:\Bluetooth Transfer\Ringtone.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+  </audio>
+<hr>
+
+  <!-- Canvas Tag  -->
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(10, 10, 150, 80);
+  </script>
+
+<hr>
+
+  <!-- Embed Tag -->
+  <embed src="D:\Coursera\Front-End Developer\3_Version Control\gitcheatsheet.pdf" type="application/pdf"width="800" height="500"> <br>
+  <!-- <embed src="E:\Bluetooth Transfer\Video.mp4" type="video/mp4" width="500" height="500"> <br>For video -->
+  <!-- <embed src="audio.mp3" type="audio/mpeg" /> For audio -->
+  <!-- <embed src="Flash.swf" type="application/x-shockwave-flash" /><br> For Adobe Flash -->
+  <!-- <embed src="example.jar" type="application/java-archive" /> <br> -->
+<hr>
+
+  <!-- Iframe Tag: Use to nested another webpage in current page.-->
+  <iframe src="Table Tags.html" width="600" height="400" title="Table Tags"></iframe>
+<hr>
+
+  <!-- Img Tag -->
+  <img src="ourPic.jpg" alt="Example Image" width="300" height="200">
+<hr>
+
+  <!-- Object Tag -->
+  <object data="E:\Bluetooth Transfer\Othe Amlan de hone ne Nabery.mp4" type="video/mp4" width="400" height="300">
+    Your browser does not support the object tag.
+  </object>
+  <br>
+  <object data="Flash.swf" type="application/x-shockwave-flash" width="300" height="200">
+    Your browser does not support Flash content.
+  </object>
+  
+<hr>
+
+  <!-- Picture Tag -->
+  <picture>
+    <source srcset="car.jpg" media="(min-width: 200px)" >
+    <img src="car.jpg" alt="Car" width="300" height="200">
+  </picture>
+<hr>
+
+  <!-- Video Tag -->
+  <video controls width="600" height="400">
+    <source src="E:\Bluetooth Transfer\Video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+<hr>
+
+  <!-- Source Tag -->
+  <picture>
+    <source srcset="brothers.jpg" media="(min-width: 800px)">
+    <img src="ourPic.jpg" alt="Responsive Image">
+  </picture>
+<hr>
+
+  <!-- SVG Tag: Scaleable Vector Graphic -->
+  <svg width="200" height="200">
+    <circle cx="100" cy="100" r="98" stroke="blue" stroke-width="1" fill="green" />
+  </svg><br>
+
+  <svg width="200" height="200">
+    <image href="C:/Users/User/Downloads/1707230776Tree16b.svg" width="200" height="200" />
+  </svg>
+  
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+        <title>Form Practice</title> 
+    </head>
+    <body>
+        <form action="my_action_page">
+            <label for="uname">Username:</label><br>
+            <input type="text" id="uname" name="username" required/><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="password"/><br><br>
+            <input type="submit" value="login"/>
+        </form>
+
+        <select id="list">
+            <option value="1st">1st</option>
+            <option value="2nd">2nd</option>
+            <option value="3rd">3rd</option>
+            <option value="4th">4th</option>
+            <option value="5th">5th</option>
+        </select><br>
+
+        <textarea name="response" cols="30" rows="10" maxlength="200"></textarea><br>
+
+        <button type="button" onclick="alert('You just clicked!')">Click Me! </button>
+<hr>
+        <fieldset> 
+            <legend>Personal Info</legend> 
+            <label for="fname">First name:</label><br> 
+            <input type="text" id="fname" name="fname" value="Syed Muhammad"><br> 
+            <label for="lname">Last name:</label><br> 
+            <input type="text" id="lname" name="lname" value="Hussnain Raza"><br> 
+          </fieldset> 
+          
+          <fieldset> 
+            <legend>Qualificaiton</legend> 
+            <label for="pdegree">Primary degree:</label><br> 
+            <input type="text" id="pdegree" name="degree" value="Bachelors"><br> 
+            <label for="fos">Last name:</label><br> 
+            <input type="text" id="fos" name="field" value="Computer Science"><br> 
+          </fieldset>
+<hr>
+        <form action="/my_action_page"> 
+            <label for="flowers">Favourite flower:</label><br> 
+            <input list="flowers" name="flowers"> 
+                <datalist id="flowers">
+                    <option value="Rose"> 
+                    <option value="Lily"> 
+                    <option value="Tulip"> 
+                    <option value="Daffodil"> 
+                    <option value="Orchid"> 
+                </datalist>
+                ...
+        </form>
+<hr>
+        <label for="course">Choose a course:</label><br> 
+        <select id="course" name="courselist"> 
+            <option value="html">HTML Introduction</option> 
+            <option value="css">Styling with CSS</option> 
+            <option value="js">JavaScript</option> 
+            <option value="react">React Basics</option> 
+            <option value="Version Control">Version Control</option> 
+        </select> 
+<hr>
+<form>
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars">
+            <optgroup label="Swedish Cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+            </optgroup>
+            <optgroup label="German Cars">
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </optgroup>
+        </select>
+  </form>
+  <!-- <script src="location.js"></script> -->
+
+    </body>
+</html>

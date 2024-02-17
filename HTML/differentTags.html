@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Different Tags</title>
+    </head>
+    <body>
+        <main>
+        <!-- Required
+        Denotes a mandatory input that the user can’t leave empty. It can be used with any input type,
+        like password, radio, text and so on -->
+        <hr><label for="firstName">Required Example</label><br>
+        <input type="text" id="firstName" name="Username" required/><br><br>
+
+        <!-- Maxlength
+        Specifies the maximum length of a text input, in other words, the maximum number of characters
+        that can be entered for a specific field. If provided, it will prevent the user from entering
+        more characters than the limit-->
+        <hr><label for="description">Maxlength Example</label><br>
+        <input type="text" id="description" name="description" maxlength="50"><br><br>
+
+        <!-- Minlength 
+        Specifies the minimum length of a text input. If set, the input will not accept
+        fewer characters than those specified.  -->
+        <hr><label for="password">Minlength Example</label><br>
+        <input type="password" id="password" name="password" minlength="8"><br><br>
+
+        <!-- Min and max attributes 
+        Determine the minimum and maximum values allowed for an input field. They are usually applied to
+        numerical text inputs, range inputs or dates.  -->
+        <hr><label for="quantity">min & max (number)</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="10"><br>
+        
+        <hr><label for="volume">min & max (range)</label><br>
+        <input type="range" id="volume" name="volume" min="1" max="100"><br><br>
+    
+        <!-- Multiple 
+        Indicates that the user can enter more than one value in a single input field. This attribute can
+        only be used for email and file input types.  -->
+        <hr><label for="gallery">Multiple for file</label><br>
+        <input type="file" id="gallery" name="gallery" multiple><br><br>
+
+        <!-- Pattern 
+        Defines a particular pattern that an input field value has to fulfill to be considered valid. This attribute
+        expects a regular expression to specify the pattern. It works with text, date, search, URL, tel, email
+        and password input types. For example, you can restrict phone numbers to be only from the UK-->
+        <hr><label for="phone">Pattern Example</label><br>
+        <input type="tel" id="phone" name="phone" pattern=”^(?:0|\+?44)(?:\d\s?){9,10}$” ><br><br>
+        <hr>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Syed Muhammad Hussnain Raza"/>
+        <meta name="title" content="Sign Up Form"/>
+        <meta name="language" content="English">
+        <meta name="description" content="Sign Up Form Using HTML">
+        <meta name="copyright" content="All rights reserved">
+        <style>
+            input:focus:invalid{
+                border: 2px solid red;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <nav>
+
+        </nav>
+        <main>
+            <h1>Sign Up Form</h1>
+            <form>
+                <div>
+                    <label for="fName">First Name: </label><br>
+                    <input type="text" id="fName" name="First name" required minlength="3">
+                </div>
+                <div>
+                    <label for="lName">Last Name: </label><br>
+                    <input type="text" id="lName" name="Last name" required minlength="3">
+                </div>
+                <div>
+                    <label for="email">Email: </label><br>
+                    <input type="email" id="email" name="User Email" required minlength="3">
+                </div>
+                <div>
+                    <label for="user_pass">Password: </label><br>
+                    <input type="password" id="user_pass" name="Password" required minlength="8">
+                </div>
+                <div>
+                    <label for="confirm">Confirm Password: </label><br>
+                    <input type="password" id="confirm" name="Confirm Password" required minlength="8">
+                </div>
+                <div>
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+
+        </main>
+        <footer>
+            <p>Copyright<small>@ 2024</small>Little Lemmon</p>
+        </footer>
+    </body>
+
+</html>

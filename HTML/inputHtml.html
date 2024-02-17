@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Input in HTML</title>
+</head>
+<body>
+    <input type="number" id="Username" name="Username" required><br/><br/>
+    
+    <button onclick="alert('Are you sure you want to continue?')"> 
+        <img src="car.jpg" 
+            alt="Submit the form" height="64" width="64">
+     </button><br>
+<hr>
+    <input type="checkbox" id="dog" name="dog" value="Dog"/>
+    <label for="dog">I like dogs.</label><br>
+    <input type="checkbox" id="cat" name="cat" value="cat"/>
+    <label for="cat">I like cats.</label><br>
+<hr>
+    <input type="radio" id="light" name="theme" value="Light"/>
+    <label for="light">Light</label><br>
+    <input type="radio" id="light" name="theme" value="Dark"/>
+    <label for="dark">Dark</label><br>
+<hr>
+    <form action="server.js" method="POST">
+        <input type="submit" value="Submit"/>
+    </form>
+<hr>
+    <label for="fname">First Name: </label><br>
+    <input type="text" id="fname" name="fname" required/><br>
+<hr>
+    <label for="pwd">Password: </label><br>
+    <input type="password" id="pwd" name="pwd" required/>
+<hr>
+    <label for="dob">Date of Birth</label><br>
+    <input type="date" id="dob" name="date of birth"/><br><br>
+
+    <label for="birthDayTime">Birthday(Date & Time)</label><br>
+    <input type="datetime-local" id="birthDayTime" name="BirthDayTime"/>
+<hr>
+    <label for="myFile">Select a File</label><br>
+    <input type="file" id="myFile" name="My File"/><br>
+<hr>
+    <!--Defines a control that is not displayed but whose value is still submitted to the server-->
+    <input type="hidden" id="hide" name="Hide" value="197"/>
+<hr>
+    <input type="image" src="ourPic.jpg" alt="Submit" width="80" height="80"/> <br>
+    <input type="number" id="quantity" name="quantity" min="1" max="5"/> <br><br>
+    <label for="res">Reset: </label>
+    <input type="reset" id="res"><br>
+<hr>
+    <label for="gsearch">Search in Google:</label>
+    <input type="search" id="gsearch" name="gsearch"><br><br>
+
+    <label for="appt">Select Time: </label>
+    <input type="time" id="appt" name="Time"/><br><br>
+
+    <label for="phone">Phone Number: </label>
+    <input type="tel" id="phone" name="phoneNumber" pattern="^((\+92)|(0092))-{0,1}3{1}\d{2}-{0,1}\d{7}$" required/><br><br>
+
+    <label for="homepage">Add Homepage: </label>
+    <input type="url" id="homepage" name="Home Page"/><br><br>
+
+    <label>Select a Week: </label>
+    <input type="week" id="week" name="Week"/><br><br>
+
+    <label for="bDayMonth">Birthday(Month & Year)</label>
+    <input type="month" id="bDayMonth" name="Birth Day Month"/>
+
+
+</body>
+</html>
